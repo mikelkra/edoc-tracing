@@ -2,9 +2,10 @@
 
 namespace Edoc\EdocTracer\Services;
 
-class ConnectionController{
+class ConnectionController
+{
     public function index()
     {
-        //
+
     }
 }

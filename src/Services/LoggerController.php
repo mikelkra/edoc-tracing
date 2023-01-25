@@ -2,9 +2,10 @@
 
 namespace Edoc\EdocTracer\Services;
 
-class LoggerController{
+class LoggerController
+{
     public function index()
     {
-        //
+
     }
 }

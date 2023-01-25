@@ -1,0 +1,46 @@
+{
+    "name": "edoc/edoc-tracer",
+    "description": "edoc tracer",
+    "keywords": [
+        "edoc",
+        "edoc-tracer"
+    ],
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "edoc solution ag",
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/support": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Edoc\\EdocTracer\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Edoc\\EdocTracer\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Edoc\\EdocTracer\\EdocTracerServiceProvider"
+            ],
+            "aliases": {
+                "EdocTracer": "Edoc\\EdocTracer\\EdocTracerFacade"
+            }
+        }
+    }
+}
